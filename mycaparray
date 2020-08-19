@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   int arr[5];
+   int x=0;
+   cout<<"Enter Elements-"<<endl;
+   while(x<5)
+   {
+       cin>>arr[x];
+       x++;
+   }
+   int *p;
+   p=arr;
+   int i=0;
+   cout<<"You Entered-"<<endl;
+   for(i=0;i<5;i++)
+   {
+       cout<<*p<<endl;
+       p++;
+   }
+   return 0;
+}
